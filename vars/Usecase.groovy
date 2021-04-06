@@ -3,7 +3,7 @@ import java.util.*
 
 def call() {
 String[] HEADERS = ["AppID","AppName","Environment","ReleaseVersion","Status"]
-def records_values=readCSV file: 'D:\\Demo-Pipeline\\CSV-Jenkins\\Input.csv'
+def records_values=readCSV file: 'D:\\Usecase\\jenkinscsv\\Input.csv'
 Iterable<CSVRecord> records = CSVFormat.DEFAULT
 		.withHeader(HEADERS)
 		.withFirstRecordAsHeader()
