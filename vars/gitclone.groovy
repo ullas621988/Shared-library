@@ -3,8 +3,8 @@
 def call(Map getval) {
 	checkout([$class: 'GitSCM', 
 	branches: [[ name: getval.branch ]], 
-	userRemoteConfigs: [[credentialsId: '12afdeaa-e9f3-4be8-bc17-64ccba068dbe', url: getval.url ]]
+	userRemoteConfigs: [[credentialsId: '78c8965c-0a19-4076-ac1e-43cca4780423', url: getval.url ]]
 	])
   }
-//12afdeaa-e9f3-4be8-bc17-64ccba068dbe
+//78c8965c-0a19-4076-ac1e-43cca4780423
 //Pipeline
